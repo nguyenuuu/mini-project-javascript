@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    background-color: #f9ca24;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 3px rgba(249, 202, 36, 0.5);
+}
+button:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+.boxes {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 125px);
+    transition: all 0.3s;
+}
+.big {
+    width: 600px;
+    height: 600px;
+    grid-gap: calc(100px / 3);
+}
+.box {
+    width: 125px;
+    height: 125px;
+    background: url(./giphy.gif);
+    background-size: 500px 500px;
+    position: relative;
+    transition: all 0.3s;
+}
+.box-active {
+    transform: rotate(360deg);
+}
+.box::after {
+    content: "";
+    width: 100%;
+    height: 20px;
+    background-color: #f9ca24;
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    transform: skewX(45deg);
+}
+.box::before {
+    content: "";
+    width: 20px;
+    height: 100%;
+    background-color: #f6e58d;
+    position: absolute;
+    top: 10px;
+    left: 100%;
+    transform: skewY(45deg);
+}
