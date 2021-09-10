@@ -1,11 +1,7 @@
 const btn = document.querySelector("button");
 const time = document.querySelector(".time");
 const go = document.querySelector(".go");
-
 let count;
-
-
-
 btn.addEventListener("click", () => {
     go.textContent = "GET READY"
     btn.style.opacity = 0;
