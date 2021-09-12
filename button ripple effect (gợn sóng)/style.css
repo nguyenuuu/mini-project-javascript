@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #6200ee;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transform: translate(0, 0);
+}
+.circle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+}
+@keyframes ripple {
+    to {
+        opacity: 0;
+        transform: scale(4);
+    }
+}
