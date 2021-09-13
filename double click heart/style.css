@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 1px;
+}
+.fa-heart {
+    color: red;
+}
+.time {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.love {
+    position: relative;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.love img {
+    cursor: pointer;
+}
+.love .fa-heart {
+    position: absolute;
+    animation: heart 0.5s linear;
+    opacity: 0.7;
+    transform: translate(-50%, -50%), scale(0);
+}
+@keyframes heart {
+    to {
+        opacity: 0.1;
+        transform: translate(-50%, -50%) scale(11);
+    }
+}
