@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "double click heart"
+		},
+		{
+			"path": "range slider"
 		}
 	],
 	"settings": {
