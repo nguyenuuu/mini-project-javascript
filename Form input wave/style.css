@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    background-color: steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.4rem;
+    color: #fff;
+    text-align: center;
+    width: 360px;
+}
+.title {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+.email, .password {
+    position: relative;
+    margin-bottom: 3rem;
+}
+.email input, .password input {
+    width: 100%;
+    padding: 0.5rem 0;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.email label,.password label {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    font-size: 1rem;
+    pointer-events: none;
+}
+label.active span {
+    color: rgb(0, 140, 255);
+    transform: translateY(-1.7rem);
+    display: inline-block;
+    transition: transform 0.15s linear, color 0.15s linear;
+}
+button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    cursor: pointer;
+    background-color: lightblue;
+    border-radius: 3px;
+    font-size: 1rem;
+}
