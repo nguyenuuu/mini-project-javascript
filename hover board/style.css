@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-gap: 4px;
+}
+.box {
+    background: rgb(29, 29, 29);
+    width: 16px;
+    height: 16px;
+    transition: 2s ease;
+}
+.box:hover {
+    transition-duration: 0s;
+}
